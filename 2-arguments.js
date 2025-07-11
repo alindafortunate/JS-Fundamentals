@@ -1,18 +1,9 @@
-function no_Argument() {
-    console.log('No argument')
-}
-function one_Argument(argument) {
-    console.log('Argument found')
-}
-function found_Argument(argument1, argument2) {
-    console.log('Argument found')
-}
+let result = ['No argument', 'Argument found', 'Arguments found']
 
-if (no_Argument()) {
+if (result[0] === process.argv[0]) {
     console.log('No argument')
-} else if (one_Argument('hello')) {
+} else if (result[1] === process.argv[1]) {
     console.log('Argument found')
-
 } else {
-    console.log('Argument found')
+    console.log('Arguments found')
 }
