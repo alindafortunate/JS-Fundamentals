@@ -1,9 +1,15 @@
 let result = ['No argument', 'Argument found', 'Arguments found']
 
-if (result[0] === process.argv[0]) {
-    console.log('Argument found')
-} else if (result[1] === process.argv[1]) {
+if (process.argv[2]) {
+    console.log(result[1])
+}
+else if (process.argv[3]) {
+    console.log(result[2])
+}
+else if (process.argv[2]) {
     console.log('Arguments found')
-} else {
-    console.log('Arguments found')
+}
+else {
+    console.log(result[0])
+
 }
