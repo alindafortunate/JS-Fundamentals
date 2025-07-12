@@ -4,7 +4,7 @@ let value = 'X'
 if (x / 1) {
     for (i = 0; i < x; i++) {
         if (i < x) {
-            console.log(value)
+            console.log(value++)
         }
     }
 } else {
